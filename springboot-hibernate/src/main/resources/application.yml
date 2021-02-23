@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: development
+    # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/drinks
+    username: nishuser
+    password: nr121280
+  # JPA properties
+  jpa:
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: true
