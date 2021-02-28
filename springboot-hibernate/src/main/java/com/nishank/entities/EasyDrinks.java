@@ -1,7 +1,9 @@
 package com.nishank.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 @Entity
 public class EasyDrinks {
@@ -10,10 +12,28 @@ public class EasyDrinks {
 	private Long id;
 	private String drink_name;
 	private String mainqty;
-	private Long amount;
-	private String seconfqty;
+	@Column(name="amount1")
+	private Long amount;	
+	private String secondqty;
+	/*
+	 * This value will not be saved in the DB
+	 */
+	@Transient
 	private Long amount2;
 	private String directions;
+	private DrinksOwnerFullName fullName;
+
+	public DrinksOwnerFullName getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(DrinksOwnerFullName fullName) {
+		this.fullName = fullName;
+	}
+
+	public void setSecondqty(String secondqty) {
+		this.secondqty = secondqty;
+	}
 
 	public Long getId() {
 		return id;
@@ -47,12 +67,12 @@ public class EasyDrinks {
 		this.amount = amount;
 	}
 
-	public String getSeconfqty() {
-		return seconfqty;
+	public String getSecondqty() {
+		return secondqty;
 	}
 
-	public void setSeconfqty(String seconfqty) {
-		this.seconfqty = seconfqty;
+	public void setSeconfqty(String secondqty) {
+		this.secondqty = secondqty;
 	}
 
 	public Long getAmount2() {

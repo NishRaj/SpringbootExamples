@@ -15,5 +15,7 @@ public interface EasyDrinksMapper {
 	EasyDrinksModel easyDrinksToModel(EasyDrinks easyDrinks); 
 	
 	List<EasyDrinksModel> easyDrinksListToModelList(List<EasyDrinks> easyDrinks);
+	
+	EasyDrinks easyDrinkModelToEasyDrinks (EasyDrinksModel easyDrinkModel);
 
 }

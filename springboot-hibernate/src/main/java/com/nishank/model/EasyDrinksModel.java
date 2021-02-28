@@ -1,5 +1,7 @@
 package com.nishank.model;
 
+import com.nishank.entities.DrinksOwnerFullName;
+
 public class EasyDrinksModel {
 
 	private Long id;
@@ -9,10 +11,21 @@ public class EasyDrinksModel {
 	private String seconfqty;
 	private Long amount2;
 	private String directions;
+	private DrinksOwnerFullName fullName;
 
 	public Long getId() {
 		return id;
 	}
+
+	public DrinksOwnerFullName getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(DrinksOwnerFullName fullName) {
+		this.fullName = fullName;
+	}
+
+
 
 	public void setId(Long id) {
 		this.id = id;

@@ -21,4 +21,9 @@ public class EasyDrinksDBService {
 		List<EasyDrinksModel> easyDrinksModelList = EasyDrinksMapper.INSTANCE.easyDrinksListToModelList(easyDrinksList);
 		return easyDrinksModelList;
 	}
+	
+	public void saveDrinks(EasyDrinksModel easyDrinkModel) {
+		EasyDrinks easyDrinks = EasyDrinksMapper.INSTANCE.easyDrinkModelToEasyDrinks(easyDrinkModel);
+		easyDrinkRepo.save(easyDrinks);
+	}
 }
