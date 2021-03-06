@@ -4,6 +4,7 @@
     <groupId>com.nishank.springboot.essentials</groupId>
     <artifactId>springboot-examples</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <relativePath>..</relativePath>
   </parent>
   <artifactId>sb-hibernate-relationships</artifactId>
   <description>Hibernate relationships</description>

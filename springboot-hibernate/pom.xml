@@ -14,22 +14,7 @@
 	<artifactId>springboot-hibernate</artifactId>
 	<name>Springboot :: Hibernate</name>
 	<description>Springboot hibernate examples</description>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<!-- Override the version of Postgresql -->
-			<version>42.2.19</version>
-			<scope>runtime</scope>
-		</dependency>
+	<dependencies>		
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
