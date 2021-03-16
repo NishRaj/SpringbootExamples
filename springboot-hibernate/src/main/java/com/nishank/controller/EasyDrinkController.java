@@ -23,6 +23,7 @@ public class EasyDrinkController {
 	
 	@GetMapping(path = "/getAllDrinks")
 	public List<EasyDrinksModel> getAllDrinks(){
+
 		return easyDrinksService.getAllDrinks();
 	}
 	@GetMapping(path = "/greetings")
@@ -33,6 +34,7 @@ public class EasyDrinkController {
 	}
 	@PostMapping(path="/saveDrinks")
 	public void saveDrink(@RequestBody EasyDrinksModel easyDrinks) {
-		easyDrinksService.saveDrinks(easyDrinks);		
+
+		easyDrinksService.saveDrinks(easyDrinks);
 	}
 }

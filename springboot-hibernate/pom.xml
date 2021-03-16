@@ -6,7 +6,7 @@
 		<groupId>com.nishank.springboot.essentials</groupId>
 		<artifactId>springboot-examples</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>..</relativePath>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<properties>
 		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>

@@ -53,6 +53,7 @@
 			<version>42.2.19</version>
 			<scope>runtime</scope>
 		</dependency>
+		<!--This is not part of Java Standard library from Java 10-->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
