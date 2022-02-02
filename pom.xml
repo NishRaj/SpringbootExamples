@@ -50,7 +50,7 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<!-- Override the version of Postgresql -->
-			<version>42.2.19</version>
+			<version>42.2.25</version>
 			<scope>runtime</scope>
 		</dependency>
 		<!--This is not part of Java Standard library from Java 10-->
